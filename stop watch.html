@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wow Stopwatch</title>
+  <link rel="stylesheet" href="stop watch.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" />
+</head>
+<body>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#features">Features</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+<label class="theme-switch">
+  <input type="checkbox" id="themeToggle" />
+  <span class="slider"></span> Dark Mode
+</label>
+
+
+  <section id="home">
+    <div class="stopwatch" id="dragTarget">
+      <h1>⏱️ Stopwatch</h1>
+      <div class="time" id="display">00:00:00</div>
+      <div class="buttons">
+        <button onclick="startTimer()">Start</button>
+        <button onclick="pauseTimer()">Pause</button>
+        <button onclick="resetTimer()">Reset</button>
+        <button onclick="lapTime()">Lap</button>
+      </div>
+      <div class="laps" id="laps"></div>
+    </div>
+  </section>
+
+  <section id="features">
+    <i class="fas fa-cogs icon"></i>
+    <h2>Features</h2>
+    <p>Our stopwatch supports the following features:</p>
+    <ul class="feature-list">
+      <li><strong>Start:</strong> Begin timing instantly.</li>
+      <li><strong>Pause:</strong> Halt without resetting.</li>
+      <li><strong>Reset:</strong> Clears time and laps.</li>
+      <li><strong>Lap:</strong> Save current time as a lap.</li>
+      <li><strong>Draggable:</strong> Move the stopwatch around.</li>
+    </ul>
+  </section>
+
+  <section id="about">
+    <i class="fas fa-info-circle icon"></i>
+    <h2>About</h2>
+    <p>A project demonstrating clean UI, animations, and JavaScript logic.</p>
+  </section>
+
+  <section id="contact">
+    <i class="fas fa-envelope icon"></i>
+    <h2>Contact</h2>
+    <p>Get in touch via email or GitHub for collaboration. 🚀</p>
+  </section>
+
+  <script src="stop watch.js"></script>
+</body>
+</html>
